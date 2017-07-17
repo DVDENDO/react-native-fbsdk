@@ -67,4 +67,9 @@ public class FBSDKPackage implements ReactPackage {
                 new FBShareButtonManager()
         );
     }
+
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Collections.emptyList();
+    }
 }
